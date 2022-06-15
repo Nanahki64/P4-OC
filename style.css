@@ -781,6 +781,10 @@ h4{
     border: solid 2px #000;
 }
 
+.scrollHiden {
+    display: block;
+}
+
 @media (max-width:1024px){
     
     .bloc{
@@ -987,12 +991,20 @@ h4{
         width:180px;
         height:320px;
     }
+
+    .scrollHiden {
+        display: none;
+    }
 }
 
 @media (max-width:400px){
     .bloc{
         padding-left:0;
         padding-right:0;
+    }
+
+    .scrollHiden {
+        display: none;
     }
 }
 
