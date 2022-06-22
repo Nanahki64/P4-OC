@@ -4,10 +4,9 @@
 	<meta charset="utf-8">
 	<meta name="description" content="Parlons web design ! Parlez-nous de votre projet en complétant le formulaire sur cette page !">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-	<meta http-equiv="expires" content="604800"/>
-
+	
 	<link rel="shortcut icon" type="image/png" href="favicon.jpg">
-
+	
 	<link rel="preload" as="style" type="text/css" href="./css/bootstrap.css">
 	<link rel="preload" as="style" type="text/css" href="style.css">
 	<link rel="preload" as="style" type="text/css" href="./css/font-awesome.css">
@@ -23,12 +22,8 @@
 	<script src="./js/blocs.js" defer></script>
 	<script src="./js/jqBootstrapValidation.js" defer></script>
 	<script src="./js/formHandler.js" defer></script>
+	
 	<title>Contact</title>
-	
-	
-	<!-- Analytics -->
-	
-	<!-- Analytics END -->
 	
 </head>
 <body>
@@ -83,7 +78,7 @@
 			<div class="container bloc-lg">
 				<div class="form__container">
 					<div class="col-sm-6">
-						<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+						<form id="form_1" novalidate data-success-msg="Your message has been sent." data-fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 							<div class="form-group">
 								<label for="name">
 									Nom
@@ -97,10 +92,10 @@
 								<input id="email" class="form-control" type="email" required />
 							</div>
 							<div class="form-group">
-								<label for="linked">
+								<label for="input_504">
 									Comment nous avez-vous connu ?
 								</label>
-								<input id="linked" class="form-control" type="email" required id="input_504" />
+								<input class="form-control" type="text" required id="input_504" />
 							</div>
 							<div class="form-group">
 								<label for="message">
